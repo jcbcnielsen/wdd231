@@ -1,0 +1,24 @@
+@media screen and (min-width: 500px) {
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    h1 {
+        grid-column: 1/3;
+    }
+
+    #courses {
+        grid-column: 1/3;
+    }
+}

@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    font-family: "Roboto", sans-serif;
+    --light-color: #eefff2;
+    --dark-color: #d6f0e0;
+    --extra-dark: #c4e0d0;
+    --accent-color: #a11;
+    --light-accent: #fdd;
+}
+
+header {
+    border-bottom: 1px solid var(--extra-dark);
+    padding: 8px;
+    background-color: var(--dark-color);
+}
+
+header img {
+    max-width: 48px;
+    height: auto;
+}
+
+header span {
+    padding-left: 16px;
+    font-size: 32px;
+}
+
+#menu {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+    font-size: 2.5em;
+}
+
+#menu::before {
+    content: "\2261";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    width: 120px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+nav a:hover {
+    border: 2px solid var(--accent-color);
+}
+
+nav a.here {
+    background-color: var(--extra-dark);
+}
+
+main {
+    display: grid;
+    padding: 4px;
+    background-color: var(--light-color);
+}
+
+h1 {
+    padding: 4px 4px 0;
+    color: var(--accent-color);
+}
+
+section {
+    margin: 4px;
+    border: 1px solid var(--extra-dark);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+h2 {
+    margin: -8px -8px 8px;
+    border-radius: 8px 8px 0 0;
+    padding: 8px;
+    text-align: center;
+    background-color: var(--extra-dark);
+    color: var(--accent-color);
+}
+
+section img {
+    display: block;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+}
+
+.filters button {
+    width: 30%;
+    border: 1px solid var(--extra-dark);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--dark-color);
+    font-size: 1.2em;
+}
+
+.filters button:hover {
+    background-color: var(--extra-dark);
+}
+
+#courseList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course {
+    width: 320px;
+    margin: 8px auto;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.comp {
+    border: 1px solid var(--extra-dark);
+    background-color: var(--dark-color);
+}
+
+.incomp {
+    border: 1px solid var(--accent-color);
+    background-color: var(--light-accent);
+}
+
+#credits {
+    text-align: center;
+}
+
+footer {
+    border-top: 1px solid var(--extra-dark);
+    padding: 8px;
+    background-color: var(--dark-color);
+    text-align: center;
+}
+
+.socialLinks a {
+    margin: 0 16px;
+}
+
+.socialLinks img {
+    max-width: 32px;
+    height: auto;
+}

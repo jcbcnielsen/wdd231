@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD231 Home Page | Jacob Nielsen</title>
+    <meta name="description" content="Home page for WDD231 assignments">
+    <meta name="author" content="Jacob Nielsen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <a href="index.html"><img src="images/logo.svg" alt="Company Logo"></a>
+        <span id="authName"></span>
+        <button aria-label="menu" id="menu"></button>
+        <nav>
+            <a class="here" href="index.html">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fugiat tempore sint voluptatem velit
+                quis eaque? Nostrum eos quia explicabo quos minima totam saepe blanditiis quas delectus, autem atque
+                qui, illum tempore? Sint sit praesentium commodi illo nesciunt modi, esse assumenda labore facere
+                accusantium harum id ratione cumque? Quos, est?</p>
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="Student Photo">
+        </section>
+
+        <section id="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </div>
+            <div id="courseList"></div>
+            <p id="credits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socialLinks">
+            <a href="https://github.com/jcbcnielsen"><img src="images/github.svg" alt="GitHub Logo"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Logo"></a>
+            <a href="https://x.com"><img src="images/x.svg" alt="X/Twitter Logo"></a>
+        </div>
+        <p>&copy;<span id="currentYear"></span> | Jacob Nielsen | Virginia, USA</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
