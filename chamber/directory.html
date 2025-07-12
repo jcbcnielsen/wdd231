@@ -10,7 +10,7 @@
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Directory - Richmond CoC">
     <meta property="og:description" content="Directory page for the Richmond Chamber of Commerce">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://jcbcnielsen.github.io/wdd231/chamber/images/chamber-open-graph.webp">
     <meta property="og:url" content="https://jcbcnielsen.github.io/wdd231/chamber/directory.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/base-large.css">
     <link rel="stylesheet" href="styles/base-small.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
     <script src="../scripts/menu.js" defer></script>
     <script src="../scripts/getdate.js" defer></script>
 </head>
@@ -39,20 +40,22 @@
 
     <main>
         <h1>Directory</h1>
+        <button id="view"></button>
+        <div id="companies"></div>
     </main>
 
     <footer>
-        <div>
+        <div id="contact">
             <p>Richmond Chamber of Commerce</p>
-            <p>Address Line 1</p>
-            <p>Address Line 2</p>
-            <p>Email Address</p>
-            <p>Phone Number</p>
+            <p>5551 Eighth Street</p>
+            <p>Richmond, VA</p>
+            <p>contact@rcoc.com</p>
+            <p>(555) 671 - 2384</p>
         </div>
-        <div>
-            <a><img></a>
-            <a><img></a>
-            <a><img></a>
+        <div id="socialLinks">
+            <a href="youtube.com"><img src="images/youtube.svg" alt="YouTube Logo from Icons8" loading="lazy"></a>
+            <a href="x.com"><img src="images/x.svg" alt="X/Twitter Logo from Icons8" loading="lazy"></a>
+            <a href="linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Logo from Icons8" loading="lazy"></a>
         </div>
         <div>
             <p>WDD231 Class Project</p>

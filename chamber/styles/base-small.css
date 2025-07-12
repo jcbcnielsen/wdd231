@@ -1,3 +1,46 @@
 :root {
+    --primary-accent: #a11;
+    --secondary-accent: #174;
+    --light-background: #eef2ff;
+    --dark-background: #d6daf0;
+    --extra-dark: #b7c5d9;
+    --link-color: #335;
     font-family: "Roboto", sans-serif;
+    color: #000;
+}
+
+a {
+    color: var(--link-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--extra-dark);
+    padding: 1rem;
+    background-color: var(--dark-background);
+}
+
+main {
+    padding: 1em;
+    background-color: var(--light-background);
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+footer {
+    border-top: 1px solid var(--extra-dark);
+    padding: 1rem;
+    background-color: var(--dark-background);
+}
+
+#contact p:first-child {
+    font-weight: 700;
+}
+
+#socialLinks img {
+    width: 48px;
+    height: auto;
 }

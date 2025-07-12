@@ -1,0 +1,53 @@
+#view {
+    width: 96px;
+    border: 1px solid var(--extra-dark);
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: var(--dark-background);
+}
+
+#view:hover {
+    background-color: var(--extra-dark);
+}
+
+#companies {
+    display: grid;
+}
+
+.deck {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.card {
+    border: 1px solid var(--extra-dark);
+    padding: 1rem;
+    background-color: var(--dark-background);
+    text-align: center;
+}
+
+.card img {
+    margin: 0 auto;
+}
+
+.list {
+    grid-template-columns: 1fr;
+}
+
+.item {
+    padding: 1rem;
+    column-gap: 1rem;
+}
+
+.item:nth-child(odd) {
+    background-color: var(--dark-background);
+}
+
+@media screen and (min-width: 512px) {
+
+    .item {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
