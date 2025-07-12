@@ -1,60 +1,60 @@
 {
     "members": [
         {
-            "name": "",
-            "address": "",
-            "phone": 0,
-            "url": "https://",
-            "image": "images/",
-            "level": 0
+            "name": "Al's Garage",
+            "address": "4928 First St",
+            "phone": "(555) 433 - 2354",
+            "url": "https://alsgarage.com",
+            "image": "images/als-garage.webp",
+            "level": 1
         },
         {
-            "name": "",
-            "address": "",
-            "phone": 0,
-            "url": "https://",
-            "image": "images/",
-            "level": 0
+            "name": "Bob's Hardware",
+            "address": "4335 Second St",
+            "phone": "(555) 988 - 8298",
+            "url": "https://bobshardware.com",
+            "image": "images/bobs-hardware.webp",
+            "level": 2
         },
         {
-            "name": "",
-            "address": "",
-            "phone": 0,
-            "url": "https://",
-            "image": "images/",
-            "level": 0
+            "name": "Charlie's Pawn",
+            "address": "8442 Third St",
+            "phone": "(555) 023 - 3405",
+            "url": "https://charliespawn.com",
+            "image": "images/charlies-pawn.webp",
+            "level": 1
         },
         {
-            "name": "",
-            "address": "",
-            "phone": 0,
-            "url": "https://",
-            "image": "images/",
-            "level": 0
+            "name": "Dave's Dogs",
+            "address": "2969 Fourth St",
+            "phone": "(555) 851 - 6441",
+            "url": "https://davesdogs.com",
+            "image": "images/daves-dogs.webp",
+            "level": 1
         },
         {
-            "name": "",
-            "address": "",
-            "phone": 0,
-            "url": "https://",
-            "image": "images/",
-            "level": 0
+            "name": "E",
+            "address": "5742 Fifth St",
+            "phone": "(555) 427 - 0245",
+            "url": "https://e.com",
+            "image": "images/e.webp",
+            "level": 2
         },
         {
-            "name": "",
-            "address": "",
-            "phone": 0,
-            "url": "https://",
-            "image": "images/",
-            "level": 0
+            "name": "Fred's Franks",
+            "address": "7332 Sixth St",
+            "phone": "(555) 227 - 4752",
+            "url": "https://fredsfranks.com",
+            "image": "images/freds-franks.webp",
+            "level": 3
         },
         {
-            "name": "",
-            "address": "",
-            "phone": 0,
-            "url": "https://",
-            "image": "images/",
-            "level": 0
+            "name": "Gary's Snails",
+            "address": "2135 Seventh St",
+            "phone": "(555) 538 - 4090",
+            "url": "https://garyssnails.com",
+            "image": "images/garys-snails.webp",
+            "level": 1
         }
     ]
 }
