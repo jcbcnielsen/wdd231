@@ -1,4 +1,27 @@
 @media screen and (min-width: 512px) {
+
+    header {
+        grid-template-columns: 1fr 4fr 6fr;
+    }
+
+    header h2 {
+        max-width: none;
+        text-align: left;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        grid-column: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav a {
+        margin: 0 1rem;
+    }
     
     footer {
         display: flex;

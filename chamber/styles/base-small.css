@@ -1,6 +1,5 @@
 :root {
     --primary-accent: #a11;
-    --secondary-accent: #174;
     --light-background: #eef2ff;
     --dark-background: #d6daf0;
     --extra-dark: #b7c5d9;
@@ -9,16 +8,67 @@
     color: #000;
 }
 
-a {
-    color: var(--link-color);
-}
-
 header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     position: sticky;
     top: 0;
     border-bottom: 1px solid var(--extra-dark);
     padding: 1rem;
     background-color: var(--dark-background);
+}
+
+header h2 {
+    max-width: 240px;
+    text-align: center;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+#menu::before {
+    content: "\2261";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    grid-column: 1/4;
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    margin: .5rem 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover,
+a.here {
+    text-decoration: underline;
+}
+
+a.here:hover {
+    text-decoration: none;
 }
 
 main {
@@ -28,6 +78,7 @@ main {
 
 h1 {
     margin-bottom: 1rem;
+    color: var(--primary-accent);
 }
 
 footer {

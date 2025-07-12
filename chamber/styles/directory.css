@@ -1,4 +1,15 @@
+header {
+    z-index: 1;
+}
+
+main {
+    position: relative;
+}
+
 #view {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     width: 96px;
     border: 1px solid var(--extra-dark);
     border-radius: .5rem;
@@ -28,6 +39,8 @@
 }
 
 .card img {
+    max-width: 300px;
+    height: auto;
     margin: 0 auto;
 }
 
