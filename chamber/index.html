@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Richmond CoC</title>
+    <meta name="description" content="Home page for the Richmond Chamber of Commerce">
+    <meta name="author" content="Jacob Nielsen">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Home - Richmond CoC">
+    <meta property="og:description" content="Home page for the Richmond Chamber of Commerce">
+    <meta property="og:image" content="https://jcbcnielsen.github.io/wdd231/chamber/images/chamber-open-graph.webp">
+    <meta property="og:url" content="https://jcbcnielsen.github.io/wdd231/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script type="module" src="scripts/home.mjs"></script>
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/getdate.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Richmond Chamber of Commerce Logo">
+        <h2>Richmond Chamber of Commerce</h2>
+        <button aria-label="menu" id="menu"></button>
+        <nav>
+            <a href="index.html" class="here">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <picture id="hero">
+            <source srcset="images/hero-large.webp" media="(min-width: 1024px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 512px)">
+            <img src="images/hero-small.webp" alt="Hero Image">
+            <button aria-label="call to action" id="action">Join Us!</button>
+        </picture>
+        <h1>Home</h1>
+        <div id="news">
+            <div id="events">
+                <h2>Events</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dicta nulla voluptate fugit hic quo
+                    exercitationem libero quas officia assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in nulla rem similique non neque
+                    quam excepturi possimus vitae eveniet.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum accusantium amet doloribus. Facere
+                    temporibus nisi eos placeat cumque, adipisci aliquam?</p>
+            </div>
+            <div id="weather">
+                <h2>Current Weather</h2>
+            </div>
+            <div id="forecast">
+                <h2>Weather Forecast</h2>
+            </div>
+        </div>
+        <div id="spotlight"></div>
+    </main>
+
+    <footer>
+        <div id="contact">
+            <p>Richmond Chamber of Commerce</p>
+            <p>5551 Eighth Street</p>
+            <p>Richmond, VA</p>
+            <p>contact@rcoc.com</p>
+            <p>(555) 671 - 2384</p>
+        </div>
+        <div id="socialLinks">
+            <a href="youtube.com"><img src="images/youtube.svg" alt="YouTube Logo from Icons8" loading="lazy"></a>
+            <a href="x.com"><img src="images/x.svg" alt="X/Twitter Logo from Icons8" loading="lazy"></a>
+            <a href="linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Logo from Icons8" loading="lazy"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Jacob Nielsen</p>
+            <p>&copy;<span id="currentYear"></span> Richmond Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

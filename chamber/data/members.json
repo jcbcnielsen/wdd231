@@ -22,7 +22,7 @@
             "phone": "(555) 023 - 3405",
             "url": "https://charliespawn.com",
             "image": "images/charlies-pawn.webp",
-            "level": 1
+            "level": 3
         },
         {
             "name": "Dave's Dogs",
@@ -54,7 +54,7 @@
             "phone": "(555) 538 - 4090",
             "url": "https://garyssnails.com",
             "image": "images/garys-snails.webp",
-            "level": 1
+            "level": 2
         }
     ]
 }

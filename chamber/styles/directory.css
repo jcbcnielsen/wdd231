@@ -1,9 +1,6 @@
-header {
-    z-index: 1;
-}
-
 main {
     position: relative;
+    padding: 1em;
 }
 
 #view {
