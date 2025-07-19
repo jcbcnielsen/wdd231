@@ -16,9 +16,16 @@
     position: absolute;
     right: 1rem;
     bottom: 1rem;
-    height: 3rem;
-    padding: .5rem;
+    height: 4rem;
+    padding: 1rem;
     font-size: 2rem;
+    border: 1px solid var(--extra-dark);
+    border-radius: 1rem;
+    background-color: var(--light-background);
+}
+
+#action:hover {
+    background-color: var(--dark-background);
 }
 
 h1 {

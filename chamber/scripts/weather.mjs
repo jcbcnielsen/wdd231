@@ -1,7 +1,7 @@
 export const weatherURL =
-    "https://api.openweathermap.org/data/2.5/weather?lat=37.54&lon=-77.44&units=imperial&appid=";
+    "https://api.openweathermap.org/data/2.5/weather?lat=37.54&lon=-77.44&units=imperial&appid=6c1856f4aae67f1860fe69cb759068d7";
 export const forecastURL =
-    "https://api.openweathermap.org/data/2.5/forecast?lat=37.54&lon=-77.44&units=imperial&appid=";
+    "https://api.openweathermap.org/data/2.5/forecast?lat=37.54&lon=-77.44&units=imperial&appid=6c1856f4aae67f1860fe69cb759068d7";
 
 export async function fetchWeather(url, display) {
     try {
