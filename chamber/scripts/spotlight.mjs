@@ -39,7 +39,7 @@ export function displaySpotlight(members, container) {
         }
         container.innerHTML += `<div class="member">
                                     <h2>${member.name}</h2>
-                                    <img src="${member.image}} alt="${member.name} logo" loading="lazy">
+                                    <img src="${member.image}" alt="${member.name} logo" loading="lazy">
                                     <div class="memberDetails">
                                         <p>Address: ${member.address}</p>
                                         <p>Phone: ${member.phone}</p>
