@@ -1,5 +1,7 @@
-export const weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=37.54&lon=-77.44&units=imperial&appid={API_key}";
-export const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=37.54&lon=-77.44&units=imperial&appid={API_key}";
+export const weatherURL =
+    "https://api.openweathermap.org/data/2.5/weather?lat=37.54&lon=-77.44&units=imperial&appid=";
+export const forecastURL =
+    "https://api.openweathermap.org/data/2.5/forecast?lat=37.54&lon=-77.44&units=imperial&appid=";
 
 export async function fetchWeather(url, display) {
     try {
@@ -17,13 +19,15 @@ export async function fetchWeather(url, display) {
 
 export function displayWeather(data, container) {
     const icon = document.createElement("img");
-    icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather.icon}@2x.png`);
-    icon.setAttribute("alt", data.weather.description);
+    icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+    icon.setAttribute("alt", data.weather[0].description);
     icon.setAttribute("loading", "lazy");
-    container.appendElement(icon);
-    container.innerHTML += `<p>${data.main.temp}\u00b0F</p>`;
-    container.innerHTML += `<p>${data.weather.description}</p>`;
-    container.innerHTML += `<p>${data.main.humidity}%</p>`;
+    container.appendChild(icon);
+    container.innerHTML += `<div class="weatherDetails">
+                                <p>${data.main.temp} \u00b0F</p>
+                                <p>${data.weather[0].description}</p>
+                                <p>Humidity: ${data.main.humidity}%</p>
+                            </div>`;
 }
 
 export async function fetchForecast(url, display) {
@@ -41,10 +45,11 @@ export async function fetchForecast(url, display) {
 }
 
 export function displayForecast(data, container) {
+    console.table(data);
     const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const tomorrow = new Date(data.list[8].dt);
-    const dayAfter = new Date(data.list[16].dt);
-    container.innerHTML += `<p>Today: ${data.list[0].main.temp}\u00b0F</p>`;
-    container.innerHTML += `<p>${dayNames[tomorrow.getDay()]}: ${data.list[8].main.temp}\u00b0F</p>`;
-    container.innerHTML += `<p>${dayNames[dayAfter.getDay()]}: ${data.list[16].main.temp}\u00b0F</p>`;
+    const tomorrow = new Date(data.list[8].dt_txt);
+    const dayAfter = new Date(data.list[16].dt_txt);
+    container.innerHTML += `<p>Today: ${data.list[0].main.temp} \u00b0F</p>
+                            <p>${dayNames[tomorrow.getDay()]}: ${data.list[8].main.temp} \u00b0F</p>
+                            <p>${dayNames[dayAfter.getDay()]}: ${data.list[16].main.temp} \u00b0F</p>`;
 }
