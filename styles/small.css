@@ -158,6 +158,40 @@ section img {
     text-align: center;
 }
 
+dialog {
+    width: 80%;
+    max-width: 640px;
+    margin: 3rem auto;
+    border: 1px solid var(--extra-dark);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--light-color);
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+h3 {
+    color: var(--accent-color);
+}
+
+dialog p {
+    margin: 8px 0;
+}
+
+dialog button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 1px solid var(--extra-dark);
+    background-color: var(--light-color);
+}
+
+dialog button:hover {
+    background-color: var(--dark-color);
+}
+
 footer {
     border-top: 1px solid var(--extra-dark);
     padding: 8px;

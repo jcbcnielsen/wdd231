@@ -4,6 +4,7 @@ const all = document.querySelector("#all");
 const wdd = document.querySelector("#wdd");
 const cse = document.querySelector("#cse");
 const credit = document.querySelector("#credits");
+const courseDetails = document.querySelector("#courseDetails");
 
 authName.textContent = `Jacob Nielsen`;
 
@@ -87,30 +88,60 @@ const courses = [
     }
 ];
 
-function courseTemplate(course) {
-    if (course.completed) {
-        return `<div class="course comp">${course.subject} ${course.number}</div>`;
-    }
-    else {
-        return `<div class="course incomp">${course.subject} ${course.number}</div>`;
-    }
+function showCourseDetails(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+        <button id="closeModal">X</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p>Credits: ${course.credits}</p>
+        <p>Certificate: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p>Technologies: ${course.technology.join(", ")}</p>`;
+    courseDetails.showModal();
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
 }
 
-function showAllCourses() {
-    courseList.innerHTML = courses.map(courseTemplate).join("");
-    credit.textContent = `The total number of credits above is ${courses.reduce((total, course) => total + course.credits, 0)}`;
+function showCourses(subj) {
+    courseList.innerHTML = "";
+    const filteredCourses = courses.filter((course) => {
+        if (subj == true) {
+            return true;
+        } else if (course.subject == subj) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    filteredCourses.forEach((course) => {
+        const courseDiv = document.createElement("div");
+        courseDiv.classList.add("course");
+        if (course.completed) {
+            courseDiv.classList.add("comp");
+        } else {
+            courseDiv.classList.add("incomp");
+        }
+        courseDiv.textContent = `${course.subject} ${course.number}`;
+        courseDiv.addEventListener("click", () => {
+            showCourseDetails(course)
+        });
+        courseList.appendChild(courseDiv);
+    });
+    credit.textContent = `The total number of credits above is ${filteredCourses.reduce((total, course) => total + course.credits, 0)}`;
 }
 
-all.addEventListener("click", showAllCourses);
-
-wdd.addEventListener("click", function() {
-    courseList.innerHTML = courses.filter((course) => course.subject == "WDD").map(courseTemplate).join("");
-    credit.textContent = `The total number of credits above is ${courses.filter((course) => course.subject == "WDD").reduce((total, course) => total + course.credits, 0)}`;
+all.addEventListener("click", () => {
+    showCourses(true);
 });
 
-cse.addEventListener("click", function() {
-    courseList.innerHTML = courses.filter((course) => course.subject == "CSE").map(courseTemplate).join("");
-    credit.textContent = `The total number of credits above is ${courses.filter((course) => course.subject == "CSE").reduce((total, course) => total + course.credits, 0)}`;
+wdd.addEventListener("click", () => {
+    showCourses("WDD");
 });
 
-showAllCourses();
+cse.addEventListener("click", () => {
+    showCourses("CSE");
+});
+
+showCourses(true);

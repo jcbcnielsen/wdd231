@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+#formDetails {
+    max-width: 640px;
+    margin: auto;
+    border: 1px solid var(--extra-dark);
+    border-radius: 1rem;
+    background-color: var(--dark-background);
+}
+
+#formDetails p {
+    margin: 1rem;
+}

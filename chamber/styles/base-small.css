@@ -78,7 +78,7 @@ a.here:hover {
 }
 
 main {
-    padding-bottom: 1rem;
+    padding: 1rem;
     background-color: var(--light-background);
 }
 

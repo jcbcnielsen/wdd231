@@ -1,0 +1,177 @@
+@keyframes slideIn {
+    from {
+        margin: 3rem auto;
+        opacity: 0;
+    }
+    to {
+        margin: 0 auto 1.5rem;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        margin: 0 auto 1rem;
+        opacity: 0;
+    }
+    to {
+        margin: 0 auto 1rem;
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form p {
+    width: 18rem;
+    text-align: left;
+    color: var(--primary-accent);
+}
+
+label {
+    margin: .5rem;
+}
+
+label:has(> input[required])::before {
+    content: "* ";
+    color: var(--primary-accent);
+}
+
+input,
+select,
+textarea {
+    display: block;
+    min-width: 18rem;
+    min-height: 3rem;
+    border: 1px solid var(--extra-dark);
+    border-radius: 1rem;
+    padding: 8px;
+}
+
+textarea {
+    max-width: 18rem;
+    border-bottom-right-radius: 0;
+}
+
+#sbutton {
+    width: 12rem;
+    height: 3rem;
+    margin: 1rem 0 1.5rem;
+    border: 1px solid var(--extra-dark);
+    border-radius: 1rem;
+}
+
+select,
+#sbutton {
+    background-color: var(--dark-background);
+}
+
+select:hover,
+#sbutton:hover {
+    background-color: var(--extra-dark);
+}
+
+#deck h2 {
+    margin: 0 0 1rem 10%;
+}
+
+.card {
+    animation: fadeIn 1s ease-in 0s 1 forwards;
+    max-width: 80%;
+    border: 1px solid var(--extra-dark);
+    border-radius: 1rem;
+    background-color: var(--dark-background);
+}
+
+.card h3 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.card button {
+    display: block;
+    width: 8rem;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    border: 1px solid var(--extra-dark);
+    border-radius: 1rem;
+    background-color: var(--light-background);
+}
+
+.card button:hover {
+    background-color: var(--extra-dark);
+}
+
+#mDetails {
+    max-width: 80%;
+    margin: auto;
+    border: 1px solid var(--extra-dark);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--dark-background);
+    text-align: center;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#mDetails button {
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--extra-dark);
+    border-radius: .5rem;
+    background-color: var(--light-background);
+    font-size: 1.5rem;
+}
+
+#mDetails button:hover {
+    background-color: var(--extra-dark);
+}
+
+#mDetails p {
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 512px) {
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        grid-column: 1/3;
+    }
+
+    form p,
+    input,
+    select,
+    textarea {
+        min-width: 32rem;
+        max-width: 32rem;
+    }
+
+    #sbutton {
+        width: 18rem;
+    }
+
+    .card {
+        animation-name: slideIn;
+    }
+
+    #mDetails {
+        max-width: 50%;
+    }
+}

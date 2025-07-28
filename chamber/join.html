@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Richmond CoC</title>
+    <meta name="description" content="Page for joining the Richmond Chamber of Commerce">
+    <meta name="author" content="Jacob Nielsen">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Join - Richmond CoC">
+    <meta property="og:description" content="Page for joining the Richmond Chamber of Commerce">
+    <meta property="og:image" content="https://jcbcnielsen.github.io/wdd231/chamber/images/chamber-open-graph.webp">
+    <meta property="og:url" content="https://jcbcnielsen.github.io/wdd231/chamber/join.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script type="module" src="scripts/join.mjs"></script>
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/getdate.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Richmond Chamber of Commerce Logo">
+        <h2>Richmond Chamber of Commerce</h2>
+        <button aria-label="menu" id="menu"></button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="here">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Richmond Chamber of Commerce</h1>
+        <form method="get" action="thankyou.html">
+            <label>First Name:<input type="text" name="fname" id="fname" title="Your first/given name"
+                autocomplete="given-name" required></label>
+            <label>Last Name:<input type="text" name="lname" id="lname" title="Your last/family name"
+                autocomplete="family-name" required></label>
+            <label>Organizational Title:<input type="text" name="orgtitle" id="orgtitle"
+                title="Your title within your organizaion" autocomplete="organization-title"></label>
+            <label>Email:<input type="email" name="email" id="email" title="Your email"
+                placeholder="example@email.com" autocomplete="email" required></label>
+            <label>Phone Number:<input type="tel" name="phone" id="phone" title="Your phone number"
+                autocomplete="tel" required></label>
+            <label>Organization Name:<input type="text" name="orgname" id="orgname"
+                title="The name of your organization" autocomplete="organization" required></label>
+            <label>Membership Level:
+                <select name="mlevel" id="mlevel" title="The desired membership level for your organization">
+                    <option selected disabled>-- select --</option>
+                    <option value="0">Non-Profit Membership</option>
+                    <option value="1">Bronze Membership</option>
+                    <option value="2">Silver Membership</option>
+                    <option value="3">Gold Membership</option>
+                </select>
+            </label>
+            <label>Organization Description:<textarea name="orgdesc" id="orgdesc"
+                title="A short description for your organization"></textarea></label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <p>* Indicates a required field</p>
+            <button type="submit" id="sbutton">Join the Chamber!</button>
+        </form>
+        <div id="deck">
+            <h2>Membership Levels</h2>
+            <div class="card">
+                <h3>Non-Profit Membership</h3>
+                <button id="npmbutton">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Bronze Level Membership</h3>
+                <button id="blmbutton">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Silver Level Membership</h3>
+                <button id="slmbutton">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Gold Level Membership</h3>
+                <button id="glmbutton">Learn More</button>
+            </div>
+        </div>
+        <dialog id="mDetails"></dialog>
+    </main>
+
+    <footer>
+        <div id="contact">
+            <p>Richmond Chamber of Commerce</p>
+            <p>5551 Eighth Street</p>
+            <p>Richmond, VA</p>
+            <p>contact@rcoc.com</p>
+            <p>(555) 671 - 2384</p>
+        </div>
+        <div id="socialLinks">
+            <a href="youtube.com"><img src="images/youtube.svg" alt="YouTube Logo from Icons8" loading="lazy"></a>
+            <a href="x.com"><img src="images/x.svg" alt="X/Twitter Logo from Icons8" loading="lazy"></a>
+            <a href="linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Logo from Icons8" loading="lazy"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Jacob Nielsen</p>
+            <p>&copy;<span id="currentYear"></span> Richmond Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
