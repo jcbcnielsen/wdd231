@@ -45,8 +45,9 @@
                 autocomplete="given-name" required></label>
             <label>Last Name:<input type="text" name="lname" id="lname" title="Your last/family name"
                 autocomplete="family-name" required></label>
-            <label>Organizational Title:<input type="text" name="orgtitle" id="orgtitle"
-                title="Your title within your organizaion" autocomplete="organization-title"></label>
+            <label>Organizational Title:<br>(Min 7 Characters, only letters, spaces, and dashes)
+                <input type="text" name="orgtitle" id="orgtitle" title="Your title within your organizaion"
+                pattern="[\-\u{20}A-Za-z]{7,}" autocomplete="organization-title"></label>
             <label>Email:<input type="email" name="email" id="email" title="Your email"
                 placeholder="example@email.com" autocomplete="email" required></label>
             <label>Phone Number:<input type="tel" name="phone" id="phone" title="Your phone number"
