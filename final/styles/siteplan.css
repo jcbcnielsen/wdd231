@@ -1,0 +1,92 @@
+:root {
+    --grey-bg: #F2F2F2;
+    --grey-fg: #676f74;
+    --grey-text: #353935;
+    --grey-window: #F2F2F2;
+    --cool-accent: #0000D6;
+    --warm-accent: #D60000;
+    --purple-accent: #776399;
+    --dark-cool-accent: #50F878;
+    --dark-warm-accent: #FFEA00;
+    --dark-purple-accent: #D6D6EA;
+}
+
+h1,
+h2,
+.hfont {
+    font-family: "Press Start 2P";
+}
+
+h1 {
+    color: var(--grey-text);
+}
+
+h2 {
+    color: var(--grey-bg);
+}
+
+p,
+a {
+    width: fit-content;
+    font-family: "Audiowide";
+    border-radius: 1rem;
+    background-color: var(--grey-window);
+    padding: .5rem;
+}
+
+p {
+    color: var(--grey-text);
+}
+
+a {
+    color: var(--cool-accent);
+}
+
+a:hover,
+a:visited:hover {
+    color: var(--warm-accent);
+}
+
+a:visited {
+    color: var(--purple-accent);
+}
+
+body {
+    background-color: var(--grey-bg);
+}
+
+section {
+    width: fit-content;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: var(--grey-fg);
+    padding: 1rem;
+}
+
+.lgrey {
+    background-color: black;
+    color: var(--grey-bg); }
+.mgrey {
+    background-color: white;
+    color: var(--grey-fg); }
+.dgrey {
+    background-color: white;
+    color: var(--grey-text); }
+.blue {
+    background-color: white;
+    color: var(--cool-accent); }
+.red {
+    background-color: white;
+    color: var(--warm-accent); }
+.dpurple {
+    background-color: white;
+    color: var(--purple-accent); }
+.green {
+    background-color: black;
+    color: var(--dark-cool-accent); }
+.yellow {
+    background-color: black;
+    color: var(--dark-warm-accent); }
+.lpurple {
+    background-color: black;
+    color: var(--dark-purple-accent); }
