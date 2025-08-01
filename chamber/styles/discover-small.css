@@ -1,0 +1,65 @@
+#lastVisit {
+    margin: 1rem 0;
+    text-align: right;
+}
+
+#deck {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.card {
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "pict"
+    "desc"
+    "addr"
+    "learn";
+    border: 1px solid var(--extra-dark);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card h2 {
+    grid-area: name;
+    margin: 1rem;
+    text-align: center;
+}
+
+.card figure {
+    grid-area: pict;
+    margin: auto;
+}
+
+.card img {
+    border-radius: .5rem;
+}
+
+.card address {
+    grid-area: addr;
+    margin: 0 1rem 1rem;
+    text-align: center;
+}
+
+.card p {
+    grid-area: desc;
+    margin: 1rem;
+}
+
+.card button {
+    grid-area: learn;
+    margin: 0 auto 1rem;
+    border: 1px solid var(--extra-dark);
+    border-radius: 1rem;
+    background-color: var(--dark-background);
+    padding: 1rem;
+}
+
+.card button:hover {
+    background-color: var(--extra-dark);
+}
+
+.source {
+    color: var(--primary-accent);
+}

@@ -1,0 +1,68 @@
+{
+    "points": [
+        {
+            "name": "Virginia Museum of Fine Arts",
+            "address": "200 N. Boulevard, Richmond, VA 23220",
+            "description": "Explore an impressive collection of art from around the world, including paintings, sculptures, and decorative arts, in a beautiful historic building.",
+            "image": "images/museum-fine-arts.webp",
+            "source": "https://commons.wikimedia.org/wiki/File:E201605_TF_0030.jpg",
+            "redirect": "https://en.wikipedia.org/wiki/Virginia_Museum_of_Fine_Arts"
+        },
+        {
+            "name": "Hollywood Cemetery",
+            "address": "412 S. Cherry St., Richmond, VA 23220",
+            "description": "A historic cemetery offering scenic views of the James River and the city skyline, featuring the graves of notable figures including two U.S. Presidents.",
+            "image": "images/hollywood-cemetery.webp",
+            "source": "https://commons.wikimedia.org/wiki/File:Hollywood_Cemetery_01.jpg",
+            "redirect": "https://en.wikipedia.org/wiki/Hollywood_Cemetery_(Richmond,_Virginia)"
+        },
+        {
+            "name": "Maymont Park",
+            "address": "1700 Hampton St., Richmond, VA 23220",
+            "description": "A sprawling estate with beautiful gardens, a Victorian mansion, a zoo, and picnic areas, perfect for outdoor fun and relaxation.",
+            "image": "images/maymont.webp",
+            "source": "https://commons.wikimedia.org/wiki/File:Maymont_Mansion.JPG",
+            "redirect": "https://en.wikipedia.org/wiki/Maymont"
+        },
+        {
+            "name": "Virginia State Capitol",
+            "address": "1000 Bank St., Richmond, VA 23219",
+            "description": "Visit the historic building designed by Thomas Jefferson, and explore the rich history of Virginia's government and architecture.",
+            "image": "images/state-capitol.webp",
+            "source": "https://commons.wikimedia.org/wiki/File:Va_Capitol.jpg",
+            "redirect": "https://en.wikipedia.org/wiki/Virginia_State_Capitol"
+        },
+        {
+            "name": "The Science Museum of Virginia",
+            "address": "2500 W. Broad St., Richmond, VA 23220",
+            "description": "Engage with interactive exhibits, live science demonstrations, and an IMAX theater, making science fun for all ages.",
+            "image": "images/science-museum.webp",
+            "source": "https://commons.wikimedia.org/wiki/File:Richmond_Science_Museum.jpg",
+            "redirect": "https://en.wikipedia.org/wiki/Science_Museum_of_Virginia"
+        },
+        {
+            "name": "Carytown",
+            "address": "Cary St., Richmond, VA 23221",
+            "description": "A vibrant shopping and dining district full of unique boutiques, cafes, and street art, perfect for a casual day out.",
+            "image": "images/carytown.webp",
+            "source": "https://commons.wikimedia.org/wiki/File:Carytown_VA.jpg",
+            "redirect": "https://en.wikipedia.org/wiki/Carytown,_Richmond,_Virginia"
+        },
+        {
+            "name": "The Diamond Baseball Stadium",
+            "address": "3001 N. Arthur Ashe Blvd., Richmond, VA 23230",
+            "description": "Watch a Richmond Flying Squirrels game at this lively stadium, enjoying America's favorite pastime.",
+            "image": "images/diamond-ballpark.webp",
+            "source": "https://commons.wikimedia.org/wiki/File:The_Diamond_ballpark_in_Richmond,_Virginia.jpg",
+            "redirect": "https://en.wikipedia.org/wiki/The_Diamond_(Richmond,_Virginia)"
+        },
+        {
+            "name": "Belle Isle",
+            "address": "James River, Richmond, VA 23220",
+            "description": "A scenic island park in the James River offering hiking trails, rock climbing, and stunning views of the city skyline.",
+            "image": "images/belle-isle.webp",
+            "source": "File:People_on_rocks_of_Belle_Isle,_James_River,_Richmond,_Virginia.JPG",
+            "redirect": "https://en.wikipedia.org/wiki/Belle_Isle_(Richmond,_Virginia)"
+        }
+    ]
+}
