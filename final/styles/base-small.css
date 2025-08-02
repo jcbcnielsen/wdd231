@@ -1,0 +1,154 @@
+* {
+    font-family: 'Audiowide', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.hfont {
+    font-family: 'Press Start 2P', serif;
+}
+
+p {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--cool-accent);
+}
+
+a:visited {
+    color: var(--purple-accent);
+}
+
+a:hover,
+a.here:hover,
+a:visited:hover,
+a.here:visited:hover {
+    color: var(--warm-accent);
+}
+
+body {
+    background-color: var(--backg-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--warm-accent);
+    border-radius: 0 0 1rem 1rem;
+    background-color: var(--foreg-color);
+    z-index: 1;
+}
+
+header h2 {
+    max-width: 70%;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background-color: var(--text-window);
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+#menu:hover {
+    background-color: var(--purple-accent);
+}
+
+#menu:before {
+    content: "\2261";
+}
+
+#menu.open:before {
+    content: "\2A2F";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    margin: 1rem auto;
+    border-radius: 1rem;
+    background-color: var(--text-window);
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: var(--cool-accent);
+}
+
+nav a.here,
+nav a.here:visited {
+    color: var(--purple-accent);
+}
+
+header h2 {
+    padding: 1rem;
+}
+
+header h2:before {
+    content: "F'burg VG Tourney";
+    color: var(--warm-accent);
+}
+
+main {
+    position: relative;
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: var(--cool-accent);
+}
+
+#colorButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--backg-color);
+    border-radius: 1rem;
+    background-color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--backg-color);
+}
+
+#colorButton:hover {
+    background-color: var(--purple-accent);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid var(--cool-accent);
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--foreg-color);
+    padding: .1px;
+}
+
+footer div {
+    width: fit-content;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: var(--text-window);
+    padding: 1rem;
+}

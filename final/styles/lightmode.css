@@ -7,3 +7,7 @@
     --warm-accent: #D60000;
     --purple-accent: #776399;
 }
+
+#colorButton:before {
+    content: "\263E";
+}

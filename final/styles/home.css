@@ -1,0 +1,8 @@
+#hero {
+    background-color: var(--backg-color);
+}
+
+#hero img {
+    max-width: 100%;
+    margin-top: -1rem;
+}

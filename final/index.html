@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | F'burg VG Tourney</title>
+    <meta name="description" content="Home page for the Fredericksburg Video Game Tournament website">
+    <meta name="author" content="Jacob Nielsen">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Home">
+    <meta property="og:site_name" content="F'burg VG Tourney">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Home page for the Fredericksburg Video Game Tournament website">
+    <meta property="og:image" content="https://jcbcnielsen.github.io/wdd231/final/images/open-graph.webp">
+    <meta property="og:url" content="https://jcbcnielsen.github.io/wdd231/final/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link id="colorMode" rel="stylesheet" href="styles/darkmode.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/basic-functions.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2></h2>
+        <button id="menu"></button>
+        <nav>
+            <a class="here" href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <picture id="hero">
+        <source srcset="images/hero-large.webp" media="(min-width: 1025px)">
+        <source srcset="images/hero-medium.webp" media="(min-width: 513px)">
+        <img src="images/hero-small.webp" alt="Super Nintendo Controller">
+    </picture>
+    <main>
+        <h1> Home</h1>
+        <button id="colorButton" title="Light Mode"></button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam at iure ipsam ad, minus blanditiis reprehenderit. Quae aperiam consectetur ea iste sunt repellendus deserunt quibusdam, quasi facilis impedit eveniet sequi, repudiandae eius odio aut. Esse sed ratione tenetur et quaerat libero voluptate maiores, cum reprehenderit explicabo, temporibus sunt corporis eius! Quos accusantium nulla modi omnis exercitationem, fugiat quo deleniti, doloremque repudiandae suscipit ea sit sunt ut rerum saepe adipisci necessitatibus porro labore at ad tempora quae illum itaque praesentium? Magni aperiam quae doloremque a reprehenderit amet est quos quaerat. Quo tenetur minus est quae maxime nemo voluptas excepturi atque!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, quia nihil! Deleniti obcaecati saepe rerum dicta animi, ipsum voluptate quam eaque assumenda eveniet porro tenetur iste facilis accusantium ab, laboriosam blanditiis aperiam ea nesciunt! Doloribus non quos, beatae voluptatum sint error iusto minus, deserunt ex totam, repellat itaque ipsum est eligendi nisi? Harum laudantium provident earum unde, repellendus repellat neque aliquam nihil velit odit pariatur veritatis amet quam reprehenderit eveniet alias assumenda necessitatibus reiciendis temporibus ea? Incidunt maiores quos optio, nostrum provident ut laborum quibusdam inventore eligendi neque nihil necessitatibus repellendus ipsa dolorem sit expedita eius nemo sapiente alias tempore.</p>
+    </main>
+
+    <footer>
+        <div id="contact">
+            <p>Fredericksburg Video Game Tournament</p>
+            <p>2371 Carl D. Silver Pkwy</p>
+            <p>Fredericksburg, VA</p>
+            <p>contact@fvgt.com</p>
+            <p>(555) 513 - 7428</p>
+        </div>
+        <div id="socialLinks">
+            <a href="https://youtube.com"><img id="ytIcon" src="images/yt-light.svg" alt="YouTube Logo from Icons8" loading="lazy"></a>
+            <a href="https://x.com"><img id="xIcon" src="images/x-light.svg" alt="X/Twitter Logo from Icons8" loading="lazy"></a>
+            <a href="https://facebook.com"><img id="fbIcon" src="images/fb-light.svg" alt="Facebook Logo from Icons8" loading="lazy"></a>
+            <p>Icons from <a href="https://icons8.com">Icons8</a></p>
+        </div>
+        <div>
+            <p>WDD231 Final Class Project</p>
+            <p>Jacob Nielsen</p>
+            <p>&copy;<span id="currentYear"></span> Fredericksburg Video Game Tournament</p>
+            <p id="lastModified">Last Modified: </p>
+            <a href="sources.html">Sources for images used</a>
+        </div>
+    </footer>
+</body>
+</html>

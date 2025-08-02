@@ -7,3 +7,7 @@
     --warm-accent: #FFEA00;
     --purple-accent: #D6D6EA;
 }
+
+#colorButton:before {
+    content: "\2600";
+}
