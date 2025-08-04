@@ -1,0 +1,199 @@
+{
+    "genres": [
+        {
+            "name": "Fighting",
+            "short": "fighting",
+            "games": [
+                {
+                    "name": "Street Fighter 6",
+                    "publisher": "Capcom",
+                    "cover": "street-fighter.webp",
+                    "source": "https://streetfighter.fandom.com/wiki/Street_Fighter_6",
+                    "dates": [
+                        "2025-08-16",
+                        "2025-12-06",
+                        "2026-03-07"
+                    ]
+                },
+                {
+                    "name": "Super Street Fighter II Turbo",
+                    "publisher": "Capcom",
+                    "cover": "ssf2t.webp",
+                    "source": "https://streetfighter.fandom.com/wiki/Super_Street_Fighter_II_Turbo",
+                    "dates": [
+                        "2025-10-18",
+                        "2025-11-22",
+                        "2026-02-04"
+                    ]
+                },
+                {
+                    "name": "Super Smash Bros. Ultimate",
+                    "publisher": "Nintendo",
+                    "cover": "smash-bros.webp",
+                    "source": "https://supersmashbros.fandom.com/wiki/Super_Smash_Bros._Ultimate",
+                    "dates": [
+                        "2025-09-03",
+                        "2026-01-03",
+                        "2026-01-24"
+                    ]
+                },
+                {
+                    "name": "Super Smash Bros. Melee",
+                    "publisher": "Nintendo",
+                    "cover": "smash-melee.webp",
+                    "source": "https://supersmashbros.fandom.com/wiki/Super_Smash_Bros._Melee",
+                    "dates": [
+                        "2025-08-30",
+                        "2025-12-13",
+                        "2026-01-10"
+                    ]
+                },
+                {
+                    "name": "Tekken 8",
+                    "publisher": "Bandai Namco",
+                    "cover": "tekken.webp",
+                    "source": "https://tekken.fandom.com/wiki/Tekken_8/Gallery",
+                    "dates": [
+                        "2025-08-20",
+                        "2025-11-29",
+                        "2026-01-31"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shooter",
+            "short": "shooter",
+            "games": [
+                {
+                    "name": "Doom II",
+                    "publisher": "id Software",
+                    "cover": "doom.webp",
+                    "source": "https://doom.fandom.com/wiki/Doom_II",
+                    "dates": [
+                        "2025-09-20",
+                        "2025-12-03",
+                        "2026-02-07"
+                    ]
+                },
+                {
+                    "name": "Overwatch 2",
+                    "publisher": "Blizzard",
+                    "cover": "overwatch.webp",
+                    "source": "https://overwatch.fandom.com/wiki/Overwatch_2",
+                    "dates": [
+                        "2025-09-17",
+                        "2025-11-05",
+                        "2026-01-21"
+                    ]
+                },
+                {
+                    "name": "Team Fortress 2",
+                    "publisher": "Valve",
+                    "cover": "tf2.webp",
+                    "source": "https://teamfortress.fandom.com/wiki/Team_Fortress_2",
+                    "dates": [
+                        "2025-09-13",
+                        "2025-11-15",
+                        "2026-02-14"
+                    ]
+                },
+                {
+                    "name": "Splatoon 3",
+                    "publisher": "Nintendo",
+                    "cover": "splatoon.webp",
+                    "source": "https://splatoon.fandom.com/wiki/Splatoon_3",
+                    "dates": [
+                        "2025-10-15",
+                        "2025-11-08",
+                        "2026-01-17"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Strategy - RTS",
+            "short": "rts",
+            "games": [
+                {
+                    "name": "StarCraft II",
+                    "publisher": "Blizzard",
+                    "cover": "starcraft.webp",
+                    "source": "https://starcraft.fandom.com/wiki/StarCraft_II",
+                    "dates": [
+                        "2025-10-04",
+                        "2025-11-19",
+                        "2026-02-18"
+                    ]
+                },
+                {
+                    "name": "Warcraft III",
+                    "publisher": "Blizzard",
+                    "cover": "warcraft.webp",
+                    "source": "https://www.thecoverproject.net/view.php?game_id=2512",
+                    "dates": [
+                        "2025-08-23",
+                        "2025-12-17",
+                        "2026-03-14"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Strategy - MOBA",
+            "short": "moba",
+            "games": [
+                {
+                    "name": "League of Legends",
+                    "publisher": "Riot Games",
+                    "cover": "league.webp",
+                    "source": "https://leagueoflegends.fandom.com/wiki/League_of_Legends",
+                    "dates": [
+                        "2025-10-01",
+                        "2025-11-01",
+                        "2026-01-07"
+                    ]
+                },
+                {
+                    "name": "Dota 2",
+                    "publisher": "Valve",
+                    "cover": "dota.webp",
+                    "source": "https://dota2.fandom.com/wiki/Dota_2",
+                    "dates": [
+                        "2025-09-06",
+                        "2025-10-25",
+                        "2026-02-21"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Other",
+            "short": "other",
+            "games": [
+                {
+                    "name": "Rocket League",
+                    "publisher": "Psyonics",
+                    "cover": "rocket-league.webp",
+                    "source": "https://rocketleague.fandom.com/wiki/Rocket_League",
+                    "dates": [
+                        "2025-10-11",
+                        "2025-12-20",
+                        "2026-02-28"
+                    ]
+                },
+                {
+                    "name": "Tetris",
+                    "publisher": "The Tetris Company",
+                    "cover": "tetris.webp",
+                    "source": "https://www.thecoverproject.net/view.php?game_id=2752",
+                    "dates": [
+                        "2025-09-27",
+                        "2025-12-27",
+                        "2026-03-04"
+                    ]
+                }
+            ]
+        }
+    ]
+}

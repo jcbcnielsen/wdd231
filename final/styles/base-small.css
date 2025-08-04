@@ -1,16 +1,26 @@
 * {
     font-family: 'Audiowide', sans-serif;
+    color: var(--text-color);
 }
 
 h1,
 h2,
 h3,
+h4,
 .hfont {
     font-family: 'Press Start 2P', serif;
 }
 
-p {
-    color: var(--text-color);
+h1 {
+    margin: 0 0 1rem 1rem;
+    color: var(--cool-accent);
+}
+
+h2 {
+    border-radius: 1rem;
+    background-color: var(--text-window);
+    padding: 1rem;
+    color: var(--warm-accent);
 }
 
 a {
@@ -38,23 +48,32 @@ header {
     border-bottom: 1px solid var(--warm-accent);
     border-radius: 0 0 1rem 1rem;
     background-color: var(--foreg-color);
+    padding: 1rem;
     z-index: 1;
 }
 
 header h2 {
+    width: fit-content;
     max-width: 70%;
+    border-radius: 1rem;
+    background-color: var(--text-window);
+    padding: 1rem;
+}
+
+header h2:before {
+    content: "F'burg VG Tourney";
+    color: var(--warm-accent);
 }
 
 #menu {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
     width: 3rem;
     height: 3rem;
     border-radius: 1.5rem;
     background-color: var(--text-window);
     font-size: 2rem;
-    color: var(--text-color);
 }
 
 #menu:hover {
@@ -97,23 +116,9 @@ nav a.here:visited {
     color: var(--purple-accent);
 }
 
-header h2 {
-    padding: 1rem;
-}
-
-header h2:before {
-    content: "F'burg VG Tourney";
-    color: var(--warm-accent);
-}
-
 main {
     position: relative;
     padding: 1rem;
-}
-
-h1 {
-    margin-bottom: 1rem;
-    color: var(--cool-accent);
 }
 
 #colorButton {
@@ -134,11 +139,27 @@ h1 {
     background-color: var(--purple-accent);
 }
 
+.card {
+    border: 1px solid var(--text-color);
+    border-radius: 1rem;
+    background-color: var(--foreg-color);
+    padding: 1rem;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card > p {
+    border-radius: 1rem;
+    background-color: var(--text-window);
+    padding: 1rem;
+}
+
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
     border-top: 1px solid var(--cool-accent);
     border-radius: 1rem 1rem 0 0;
     background-color: var(--foreg-color);
@@ -151,4 +172,8 @@ footer div {
     border-radius: 1rem;
     background-color: var(--text-window);
     padding: 1rem;
+}
+
+footer img {
+    width: 3rem;
 }

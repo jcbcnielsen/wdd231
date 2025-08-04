@@ -27,8 +27,14 @@
         margin: auto;
     }
 
-    footer {
-        flex-direction: row;
-        align-items: center;
+    #socialLinks {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    #miscInfo {
+        margin-left: auto;
     }
 }
