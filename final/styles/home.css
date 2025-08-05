@@ -4,8 +4,8 @@
 
 #hero img {
     width: 100%;
-    height: auto;
     max-width: 1920px;
+    aspect-ratio: 512 / 288;
     margin: -1rem 0 0;
 }
 
@@ -96,7 +96,7 @@ button[type="submit"]:hover {
     grid-area: art;
     width: 100%;
     max-width: 300px;
-    height: auto;
+    aspect-ratio: 1 / 1;
     margin: auto;
     border-radius: 1rem;
 }
@@ -115,7 +115,18 @@ button[type="submit"]:hover {
     grid-area: next;
 }
 
+@media screen and (min-width: 513px) {
+
+    #hero img {
+        aspect-ratio: 1024 / 415;
+    }
+}
+
 @media screen and (min-width: 1025px) {
+
+    #hero img {
+        aspect-ratio: 1920 / 608;
+    }
 
     #deck {
         grid-template-columns: 3fr 2fr;

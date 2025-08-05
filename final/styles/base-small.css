@@ -176,4 +176,5 @@ footer div {
 
 footer img {
     width: 3rem;
+    aspect-ratio: 1 / 1;
 }
