@@ -28,7 +28,7 @@ function displayRandomlyFeatured(genres) {
             <h3>${games[i].name}</h3>
             <p class="pub">${games[i].publisher}</p>
             <p class="next">Next Tourney: ${nextTourneyString}</p>
-            <img src="images/${games[i].cover}"
+            <img src="images/${games[i].short}.webp"
                 alt="${games[i].name} by ${games[i].publisher}" loading="lazy">`;
         spotlight.appendChild(game);
     });

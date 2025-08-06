@@ -21,9 +21,9 @@
     <link id="colorMode" rel="stylesheet" href="styles/darkmode.css">
     <link rel="stylesheet" href="styles/base-small.css">
     <link rel="stylesheet" href="styles/base-large.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/response.css">
     <script src="scripts/basic-functions.js" defer></script>
-    <script src="scripts/featured-games.js" type="module"></script>
+    <script src="scripts/form-response.js" type="module"></script>
 </head>
 
 <body>
@@ -31,47 +31,16 @@
         <h2></h2>
         <button id="menu" aria-label="menu"></button>
         <nav>
-            <a class="here" href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="games.html">Games</a>
             <a href="signup.html">Sign Up</a>
         </nav>
     </header>
 
-    <picture id="hero">
-        <source srcset="images/hero-large.webp" media="(min-width: 1025px)">
-        <source srcset="images/hero-medium.webp" media="(min-width: 513px)">
-        <img src="images/hero-small.webp" alt="Super Nintendo Controller">
-    </picture>
     <main>
-        <h1>Home</h1>
+        <h1>Thank You!</h1>
         <button id="colorButton" title="Light Mode"></button>
-        <div id="deck">
-            <div id="welcome" class="card">
-                <h2>Welcome!</h2>
-                <p>The Fredericksburg Video Game Tournament organizes game tournaments local to the Fredericksburg area.
-                    We have tournaments on almost every weekend, and twice per month during the week. Which game is
-                    played at each tournament changes every time! There are multiple tournament formats per game to
-                    choose from, most notably when choosing to play on a team, so make sure to bring your friends! We
-                    organize at multiple levels, so players of all skill levels are welcome and encouraged to sign up,
-                    even if you're not sure about how you may fare!</p>
-            </div>
-            <div id="signup" class="card">
-                <h2>Join the Action!</h2>
-                <form method="get" action="signup.html">
-                    <label>First Name:<input type="text" id="fname" name="fname" title="Your first/given name"
-                            autocomplete="given-name"></label>
-                    <label>Last Name:<input type="text" id="lname" name="lname" title="Your last/family name"
-                            autocomplete="family-name"></label>
-                    <label>Email:<input type="email" id="email" name="email" title="Your email"
-                            autocomplete="email"></label>
-                    <button type="submit">Sign Up!</button>
-                </form>
-            </div>
-            <div id="feature" class="card">
-                <h2>Featured Games</h2>
-                <div id="spotlight"></div>
-            </div>
-        </div>
+        <div id="formInfo" class="card"></div>
     </main>
 
     <footer>

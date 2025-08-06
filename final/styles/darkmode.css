@@ -11,3 +11,7 @@
 #colorButton:before {
     content: "\2600";
 }
+
+::backdrop {
+    background-color: rgba(0, 0, 0, .5);
+}

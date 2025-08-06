@@ -6,26 +6,37 @@ const ytIcon = document.getElementById("ytIcon");
 const xIcon = document.getElementById("xIcon");
 const fbIcon = document.getElementById("fbIcon");
 
-colorButton.addEventListener("click", () => {
-    if (colorSheet.getAttribute("href") == "styles/darkmode.css") {
+let colorPref = localStorage.getItem("colorPref");
+
+function swapColorMode(currentColor) {
+    if (currentColor == "dark") {
         colorSheet.setAttribute("href", "styles/lightmode.css");
         colorButton.setAttribute("title", "Dark Mode");
         ytIcon.setAttribute("src", "images/yt-dark.svg");
         xIcon.setAttribute("src", "images/x-dark.svg");
         fbIcon.setAttribute("src", "images/fb-dark.svg");
+        colorPref = "light";
+        localStorage.setItem("colorPref", colorPref);
     } else {
         colorSheet.setAttribute("href", "styles/darkmode.css");
         colorButton.setAttribute("title", "Light Mode");
         ytIcon.setAttribute("src", "images/yt-light.svg");
         xIcon.setAttribute("src", "images/x-light.svg");
         fbIcon.setAttribute("src", "images/fb-light.svg");
+        colorPref = "dark";
+        localStorage.setItem("colorPref", colorPref);
     }
+}
+
+colorButton.addEventListener("click", () => {
+    swapColorMode(colorPref);
 });
 
-colorSheet.setAttribute("href", "styles/darkmode.css");
-ytIcon.setAttribute("src", "images/yt-light.svg");
-xIcon.setAttribute("src", "images/x-light.svg");
-fbIcon.setAttribute("src", "images/fb-light.svg");
+if (colorPref == "dark" || colorPref == null) {
+    swapColorMode("light");
+} else {
+    swapColorMode("dark");
+}
 
 // ----------------------------------------------------------------
 // Open and close ham navigation menu

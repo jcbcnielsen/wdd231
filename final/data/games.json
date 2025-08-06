@@ -6,9 +6,10 @@
             "games": [
                 {
                     "name": "Street Fighter 6",
+                    "short": "street-fighter",
                     "publisher": "Capcom",
-                    "cover": "street-fighter.webp",
                     "source": "https://streetfighter.fandom.com/wiki/Street_Fighter_6",
+                    "team": "false",
                     "dates": [
                         "2025-08-16",
                         "2025-12-06",
@@ -17,9 +18,10 @@
                 },
                 {
                     "name": "Super Street Fighter II Turbo",
+                    "short": "ssf2t",
                     "publisher": "Capcom",
-                    "cover": "ssf2t.webp",
                     "source": "https://streetfighter.fandom.com/wiki/Super_Street_Fighter_II_Turbo",
+                    "team": "false",
                     "dates": [
                         "2025-10-18",
                         "2025-11-22",
@@ -28,9 +30,10 @@
                 },
                 {
                     "name": "Super Smash Bros. Ultimate",
+                    "short": "smash-bros",
                     "publisher": "Nintendo",
-                    "cover": "smash-bros.webp",
                     "source": "https://supersmashbros.fandom.com/wiki/Super_Smash_Bros._Ultimate",
+                    "team": "optional",
                     "dates": [
                         "2025-09-03",
                         "2026-01-03",
@@ -39,9 +42,10 @@
                 },
                 {
                     "name": "Super Smash Bros. Melee",
+                    "short": "smash-melee",
                     "publisher": "Nintendo",
-                    "cover": "smash-melee.webp",
                     "source": "https://supersmashbros.fandom.com/wiki/Super_Smash_Bros._Melee",
+                    "team": "optional",
                     "dates": [
                         "2025-08-30",
                         "2025-12-13",
@@ -50,9 +54,10 @@
                 },
                 {
                     "name": "Tekken 8",
+                    "short": "tekken",
                     "publisher": "Bandai Namco",
-                    "cover": "tekken.webp",
                     "source": "https://tekken.fandom.com/wiki/Tekken_8/Gallery",
+                    "team": "false",
                     "dates": [
                         "2025-08-20",
                         "2025-11-29",
@@ -67,9 +72,10 @@
             "games": [
                 {
                     "name": "Doom II",
+                    "short": "doom",
                     "publisher": "id Software",
-                    "cover": "doom.webp",
                     "source": "https://doom.fandom.com/wiki/Doom_II",
+                    "team": "optional",
                     "dates": [
                         "2025-09-20",
                         "2025-12-03",
@@ -78,9 +84,10 @@
                 },
                 {
                     "name": "Overwatch 2",
+                    "short": "overwatch",
                     "publisher": "Blizzard",
-                    "cover": "overwatch.webp",
                     "source": "https://overwatch.fandom.com/wiki/Overwatch_2",
+                    "team": "true",
                     "dates": [
                         "2025-09-17",
                         "2025-11-05",
@@ -89,9 +96,10 @@
                 },
                 {
                     "name": "Team Fortress 2",
+                    "short": "tf2",
                     "publisher": "Valve",
-                    "cover": "tf2.webp",
                     "source": "https://teamfortress.fandom.com/wiki/Team_Fortress_2",
+                    "team": "true",
                     "dates": [
                         "2025-09-13",
                         "2025-11-15",
@@ -100,9 +108,10 @@
                 },
                 {
                     "name": "Splatoon 3",
+                    "short": "splatoon",
                     "publisher": "Nintendo",
-                    "cover": "splatoon.webp",
                     "source": "https://splatoon.fandom.com/wiki/Splatoon_3",
+                    "team": "true",
                     "dates": [
                         "2025-10-15",
                         "2025-11-08",
@@ -117,9 +126,10 @@
             "games": [
                 {
                     "name": "StarCraft II",
+                    "short": "starcraft",
                     "publisher": "Blizzard",
-                    "cover": "starcraft.webp",
                     "source": "https://starcraft.fandom.com/wiki/StarCraft_II",
+                    "team": "optional",
                     "dates": [
                         "2025-10-04",
                         "2025-11-19",
@@ -128,9 +138,10 @@
                 },
                 {
                     "name": "Warcraft III",
+                    "short": "warcraft",
                     "publisher": "Blizzard",
-                    "cover": "warcraft.webp",
                     "source": "https://www.thecoverproject.net/view.php?game_id=2512",
+                    "team": "optional",
                     "dates": [
                         "2025-08-23",
                         "2025-12-17",
@@ -145,9 +156,10 @@
             "games": [
                 {
                     "name": "League of Legends",
+                    "short": "league",
                     "publisher": "Riot Games",
-                    "cover": "league.webp",
                     "source": "https://leagueoflegends.fandom.com/wiki/League_of_Legends",
+                    "team": "true",
                     "dates": [
                         "2025-10-01",
                         "2025-11-01",
@@ -156,9 +168,10 @@
                 },
                 {
                     "name": "Dota 2",
+                    "short": "dota",
                     "publisher": "Valve",
-                    "cover": "dota.webp",
                     "source": "https://dota2.fandom.com/wiki/Dota_2",
+                    "team": "true",
                     "dates": [
                         "2025-09-06",
                         "2025-10-25",
@@ -173,9 +186,10 @@
             "games": [
                 {
                     "name": "Rocket League",
-                    "publisher": "Psyonics",
-                    "cover": "rocket-league.webp",
+                    "short": "rocket-league",
+                    "publisher": "Psyonicx",
                     "source": "https://rocketleague.fandom.com/wiki/Rocket_League",
+                    "team": "optional",
                     "dates": [
                         "2025-10-11",
                         "2025-12-20",
@@ -184,9 +198,10 @@
                 },
                 {
                     "name": "Tetris",
+                    "short": "tetris",
                     "publisher": "The Tetris Company",
-                    "cover": "tetris.webp",
                     "source": "https://www.thecoverproject.net/view.php?game_id=2752",
+                    "team": "false",
                     "dates": [
                         "2025-09-27",
                         "2025-12-27",

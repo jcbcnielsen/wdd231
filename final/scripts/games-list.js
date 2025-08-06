@@ -16,7 +16,7 @@ function displayAllGameTournaments(genres) {
             const display = document.createElement("div");
             display.classList.add("game");
             display.innerHTML = `
-                <img src="images/${game.cover}"
+                <img src="images/${game.short}.webp"
                     alt="${game.name} by ${game.publisher}" loading="lazy">
                 <h3>${game.name}</h3>
                 <p class="pub">${game.publisher}</p>

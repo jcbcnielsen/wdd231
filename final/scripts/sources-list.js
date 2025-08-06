@@ -9,7 +9,7 @@ function displayGameSources(genres) {
         const card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = `
-            <img src="images/${game.cover}"
+            <img src="images/${game.short}.webp"
                 alt="${game.name} by ${game.publisher}" loading="lazy">
             <h2>${game.name}</h2>
             <p>Copyright: ${game.publisher}</p>

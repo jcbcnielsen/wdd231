@@ -1,0 +1,9 @@
+#formInfo {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.card p {
+    margin: 1rem 0;
+}
