@@ -1,5 +1,5 @@
 import { gameSel, dateSel, teamCheck, teamName, teamMembers } from "./signup-form.mjs";
-import { arrayifyGames } from "./shared-game-functions.mjs";
+import { arrayifyGames } from "./shared-functions.mjs";
 
 export let gamesArray;
 

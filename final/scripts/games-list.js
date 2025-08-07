@@ -1,4 +1,4 @@
-import { fetchGames } from "./shared-game-functions.mjs";
+import { setupBasicFunctions, fetchGames } from "./shared-functions.mjs";
 
 const deck = document.getElementById("deck");
 
@@ -21,7 +21,7 @@ function displayAllGameTournaments(genres) {
                 <h3>${game.name}</h3>
                 <p class="pub">${game.publisher}</p>
                 <h4>Upcoming Tournaments:</h4>`;
-            
+
             // Display each upcoming tournament date
             const tourneys = document.createElement("div");
             tourneys.classList.add("tourneys");
@@ -44,4 +44,5 @@ function displayAllGameTournaments(genres) {
     });
 }
 
+setupBasicFunctions();
 fetchGames([displayAllGameTournaments]);

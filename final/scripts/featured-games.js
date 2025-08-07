@@ -1,4 +1,4 @@
-import { fetchGames, arrayifyGames } from "./shared-game-functions.mjs";
+import { setupBasicFunctions, fetchGames, arrayifyGames } from "./shared-functions.mjs";
 
 const spotlight = document.getElementById("spotlight");
 
@@ -34,4 +34,5 @@ function displayRandomlyFeatured(genres) {
     });
 }
 
+setupBasicFunctions();
 fetchGames([displayRandomlyFeatured]);

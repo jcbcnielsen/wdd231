@@ -1,4 +1,4 @@
-import { fetchGames } from "./shared-game-functions.mjs";
+import { setupBasicFunctions, fetchGames } from "./shared-functions.mjs";
 import { gamesArray, displayGamesSelect, addDatesAndTeamCheck, teamCheckChange } from "./form-functions.mjs";
 import { displayReview } from "./review-functions.mjs";
 
@@ -49,6 +49,7 @@ function displayUpcomingTourneys(genres) {
     });
 }
 
+setupBasicFunctions();
 fetchGames([displayGamesSelect, displayUpcomingTourneys]);
 gameSel.addEventListener("change", () => {
     addDatesAndTeamCheck();

@@ -1,4 +1,4 @@
-import { fetchGames, arrayifyGames } from "./shared-game-functions.mjs"
+import { setupBasicFunctions, fetchGames, arrayifyGames } from "./shared-functions.mjs"
 
 const formInfo = document.getElementById("formInfo");
 const params = new URLSearchParams(window.location.search);
@@ -13,7 +13,7 @@ function displayFormResponse(genres) {
             <p>First Name: ${params.get("fname")}</p>
             <p>Last Name: ${params.get("lname")}</p>
             <p>Email: ${params.get("email")}</p>`;
-        
+
         // Display phone number if it was provided
         if (params.get("phone") != "") {
             formInfo.innerHTML += `<p>Phone Number: ${params.get("phone")}</p>`;
@@ -47,4 +47,5 @@ function displayFormResponse(genres) {
     }
 }
 
+setupBasicFunctions();
 fetchGames([displayFormResponse]);

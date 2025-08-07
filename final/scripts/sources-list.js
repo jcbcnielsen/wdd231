@@ -1,4 +1,4 @@
-import { fetchGames, arrayifyGames } from "./shared-game-functions.mjs";
+import { setupBasicFunctions, fetchGames, arrayifyGames } from "./shared-functions.mjs";
 
 const deck = document.getElementById("deck");
 
@@ -18,4 +18,5 @@ function displayGameSources(genres) {
     });
 }
 
+setupBasicFunctions();
 fetchGames([displayGameSources]);
