@@ -44,4 +44,4 @@ function displayAllGameTournaments(genres) {
     });
 }
 
-fetchGames(displayAllGameTournaments);
+fetchGames([displayAllGameTournaments]);

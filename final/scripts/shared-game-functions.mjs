@@ -1,11 +1,13 @@
 const url = "./data/games.json"
 
-export async function fetchGames(displayFuntion) {
+export async function fetchGames(displayFuntions) {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            displayFuntion(data.genres);
+            displayFuntions.forEach((displayFunction) => {
+                displayFunction(data.genres);
+            });
         } else {
             throw(Error(await response.text()));
         }

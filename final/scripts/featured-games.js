@@ -34,4 +34,4 @@ function displayRandomlyFeatured(genres) {
     });
 }
 
-fetchGames(displayRandomlyFeatured);
+fetchGames([displayRandomlyFeatured]);

@@ -47,4 +47,4 @@ function displayFormResponse(genres) {
     }
 }
 
-fetchGames(displayFormResponse);
+fetchGames([displayFormResponse]);

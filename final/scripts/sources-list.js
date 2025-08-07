@@ -18,4 +18,4 @@ function displayGameSources(genres) {
     });
 }
 
-fetchGames(displayGameSources);
+fetchGames([displayGameSources]);
