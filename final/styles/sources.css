@@ -24,7 +24,6 @@
     max-width: 300px;
     aspect-ratio: 1 / 1;
     margin: auto;
-    border-radius: 1rem;
 }
 
 #deck img.wide {
@@ -37,7 +36,6 @@
 }
 
 #deck a {
-    border-radius: 1rem;
     background-color: var(--text-window);
     padding: 1rem;
 }

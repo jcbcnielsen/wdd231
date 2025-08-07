@@ -16,25 +16,12 @@
     margin-bottom: 0;
 }
 
-.game {
-    display: grid;
-    border-radius: 1rem;
-    background-color: var(--text-window);
-    padding: 1rem;
-}
-
 .game img {
     margin: 0 auto;
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 1 / 1;
-    border-radius: 1rem;
 }
 
 .game h3 {
-    margin-top: 1rem;
     text-align: center;
-    color: var(--cool-accent);
 }
 
 .game p {
